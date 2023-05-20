@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app1.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <ul>
+        <li ng-repeat="country in countries">
+            <input type="checkbox" ng-model="country.selected">{{country.name}}
+        </li>
+    </ul>
+    <input type="text" ng-model="newCountryName">
+    <button ng-click="addCountry()">Додати країну</button>
+    <input type="text" ng-model="deleteCountryName">
+    <button ng-click="deleteCountry()">Видалити країну</button>
+    <a href="index.html">На головну</a>
+</body>
+</html>

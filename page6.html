@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app5.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <ul>
+        <li ng-repeat="num in numbers">{{num}}</li>
+    </ul>
+    <p>Сума: {{sum}}</p>
+    <input type="number" ng-model="newNum">
+    <button ng-click="addNumber()">Додати</button>
+    <a href="index.html">На головну</a>
+</body>
+</html>
